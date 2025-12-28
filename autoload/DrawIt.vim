@@ -404,7 +404,7 @@ fun! DrawIt#DrawItStart(...)
   " DrawItStart: set up drawing mode mappings (Charles Campbell) {{{3
   " \pa ... \pz : blanks are transparent
   " \ra ... \rz : blanks copy over
-  vmap <buffer> <silent> <Leader>e   :<c-u>call <SID>CallBox('DrawEllipse')<CR>
+  vmap     <silent> <buffer> <script> <Leader>e  :<c-u>call <SID>CallBox('DrawEllipse')<CR>
   
   let allreg= "abcdefghijklmnopqrstuvwxyz"
   while strlen(allreg) > 0
